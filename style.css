@@ -1,3 +1,19 @@
 body {
     background-color: lightblue;
 }
+
+p {
+    color: gray;
+}
+
+h2 {
+    text-align: center;
+}
+
+#nombre-principal {
+    color: darkblue;
+}
+
+.descripcion {
+    font-size: 1.2rem;
+}
