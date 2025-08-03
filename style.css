@@ -29,3 +29,11 @@ h2 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
 }
+
+#btn-saludo {
+    background-color: #111;
+    color: #3d3;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    border: solid #2a2 2px;
+}

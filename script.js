@@ -4,4 +4,5 @@ function saludar() {
     alert("Hola, " + miNombre + "!");
 }
 
-saludar();
+let botonSaludo = document.getElementById('btn-saludo');
+botonSaludo.addEventListener('click', saludar);
