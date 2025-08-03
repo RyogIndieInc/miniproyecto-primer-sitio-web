@@ -1,39 +1,104 @@
 body {
     background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-p {
-    color: gray;
-}
-
-h2 {
+.tarjeta-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    width: 350px;
     text-align: center;
+}
+
+img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
 #nombre-principal {
     color: darkblue;
-    padding: 20px;
-    border: 2px solid darkblue;
-    margin: 10px;
+    padding: 0;
+    margin: 0;
 }
 
 #descripcion-perfil {
-    font-size: 1.2rem;
-    padding: 10px;
-    border: 1px dashed gray;
-    margin: 5px;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: gray;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-.tarjeta-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li::before {
+    content: "✓ ";
+    color: #008000;
+    font-weight: bold;
+}
+
+ul li:first-child {
+    font-style: italic;
+    color: #ff0000;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+a:hover {
+    color: #ff5733;
 }
 
 #btn-saludo {
     background-color: #111;
     color: #3d3;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     border: solid #2a2 2px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#btn-saludo:active {
+    transform: scale(0.95);
+}
+
+#btn-saludo:focus {
+    outline: 2px solid #555555;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.8em;
+    color: #666;
+    margin: 0;
 }
