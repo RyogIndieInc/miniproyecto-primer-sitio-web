@@ -24,8 +24,8 @@ h2 {
     margin: 5px;
 }
 
-.habilidades-flexbox {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.tarjeta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
 }
