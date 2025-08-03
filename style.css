@@ -73,7 +73,7 @@ a:hover {
     color: #ff5733;
 }
 
-#btn-saludo {
+#btn-habilidades {
     background-color: #111;
     color: #3d3;
     font-size: 20px;
@@ -85,11 +85,11 @@ a:hover {
     margin-top: 20px;
 }
 
-#btn-saludo:active {
+#btn-habilidades:active {
     transform: scale(0.95);
 }
 
-#btn-saludo:focus {
+#btn-habilidades:focus {
     outline: 2px solid #555555;
 }
 
