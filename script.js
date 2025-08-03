@@ -1,8 +1,7 @@
-let miNombre = "RyogDev"
+let botonSaludo = document.getElementById('btn-saludo');
 
-function saludar() {
-    alert("Hola, " + miNombre + "!");
+function cambiarTextoBoton() {
+    botonSaludo.innerText = '¡Hola! Bienvenido a mi página de presentación. Ahora soy un experto en HTML, CSS y JavaScript básico.';
 }
 
-let botonSaludo = document.getElementById('btn-saludo');
-botonSaludo.addEventListener('click', saludar);
+botonSaludo.addEventListener('click', cambiarTextoBoton);
