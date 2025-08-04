@@ -60,11 +60,6 @@ ul li::before {
     font-weight: bold;
 }
 
-ul li:first-child {
-    font-style: italic;
-    color: #ff0000;
-}
-
 nav {
     margin-bottom: 20px;
 }
@@ -97,8 +92,7 @@ footer {
     margin-top: 20px;
 }
 
-footer p {
-    font-size: 0.8em;
-    color: #666;
-    margin: 0;
+/* Añade un poco de espacio entre los enlaces del footer */
+footer a {
+    margin: 0 10px; /* Margen de 10px a la izquierda y derecha */
 }

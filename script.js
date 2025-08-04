@@ -19,3 +19,32 @@ const listaHabilidades = document.querySelector('ul'); // <-- ¡Esta línea es l
 
 // Y ahora el addEventListener funciona porque la función ya está definida
 botonSaludo.addEventListener('click', agregarHabilidades);
+
+// Define el array de objetos con tus redes sociales
+const redesSociales = [
+    { nombre: "GitHub", url: "https://github.com/RyogIndieInc" },
+    { nombre: "LinkedIn", url: "https://linkedin.com/in/ronnyolivares" },
+    { nombre: "X(Twitter)", url: "https://x.com/RyogDev"}
+];
+
+// Función para crear enlaces dinámicos
+const crearEnlacesSociales = () => {
+  // Selecciona el footer
+    const footer = document.querySelector('footer');
+
+  // Borra el contenido actual del footer para evitar duplicados
+    footer.innerHTML = '';
+
+  // Recorre el array de redes sociales
+    redesSociales.forEach(red => {
+    const nuevoEnlace = document.createElement('a');
+    nuevoEnlace.href = red.url;
+    nuevoEnlace.textContent = red.nombre;
+
+    // Añade el enlace al footer
+    footer.appendChild(nuevoEnlace);
+    });
+};
+
+// Llama a la función al cargar la página para que los enlaces aparezcan
+crearEnlacesSociales();
